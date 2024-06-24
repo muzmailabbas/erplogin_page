@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,900&display=swap');
+
+        body {
+            display: flex;
+            margin: 0;
+            overflow: hidden;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .wrapper {
+            display: flex;
+            width: 100%;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            width: 60%;
+        }
+
+        h1 {
+            font-size: 3.2em;
+            margin-bottom: 20px;
+            color: rgb(157, 31, 34);
+        }
+
+        h1 b {
+            font-family: "Poppins", sans-serif;
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 25px 40px;
+            font-size: 18px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            outline: none;
+            border-left: 6px solid rgb(157, 31, 34);
+        }
+
+        button {
+            background-color: rgb(157, 31, 34);
+            color: white;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 40%;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: rgba(157, 31, 33, 0.685);
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            width: 100px;
+        }
+
+        .forgot-password {
+            font-size: 15px;
+            color: #000;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .rem {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .text {
+            display: flex;
+            color: #999;
+        }
+
+        .image-container {
+            width: 50%;
+            background-image: url('./baner.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="main">
+                <div class="logo-container">
+                    <div class="logo">
+                        <img src="logo1.png" alt="BSI International Logo">
+                    </div>
+                    <div class="logo">
+                        <img src="logo2.png" alt="Emkan Engineering Logo">
+                    </div>
+                </div>
+                <h1>Sign<b>In</b></h1>
+                <form>
+                    <input type="email" placeholder="Email address" style="border-left: 4px solid rgb(157, 31, 34);">
+                    <input type="password" placeholder="Password">
+                    <div class="rem">
+                        <div class="remember-me">
+                            <input type="checkbox"> Remember me
+                        </div>
+                        <a href="#" class="forgot-password">Forget password?</a>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+                <div class="footer">
+                    <div class="text">
+                        <img src="logo3.png" width="70%" alt="ERPNext Logo">
+                        <img src="logo4.png" alt="Synergy Logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image-container"></div>
+    </div>
+</body>
+
+</html>
